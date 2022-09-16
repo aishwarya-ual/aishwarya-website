@@ -1,0 +1,95 @@
+.react-clock {
+  display: block;
+  position: center;
+}
+.react-clock,
+.react-clock *,
+.react-clock *:before,
+.react-clock *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: initial;
+  box-sizing: border-box;
+}
+
+.react-clock {
+speak-time: none;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.react-clock__face {
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+;
+
+  border-radius: 100%;
+}
+.react-clock__hand {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+}
+.react-clock__hand__body {
+  position: absolute;
+  background-color: white;
+  transform: translate(-50%);
+}
+.react-clock__mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+}
+.react-clock__mark__body {
+  position: absolute;
+  background-color: white;
+  transform: translate(-50%);
+
+}
+.react-clock__mark__number {
+  position: absolute;
+  left: 0px;
+  width: 80px;
+  text-align: center;
+}
+.react-clock__second-hand__body {
+  background-color: white;
+}
+
+
+.clockClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.clock1 {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.clock2 {
+  padding-right: 70px;
+  padding-left: 70px;
+
+}
+.clockLocal {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.clock3 {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.clock4 {
+  padding-right: 70px;
+  padding-left: 70px;
+}
