@@ -1,0 +1,144 @@
+body {
+    font-family: 'Times New Roman', serif !important;
+}
+
+#unakkuthaan,
+#ennasolla,
+#siddhivinayak {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#tamilunakkuthaan,
+#tamilennasolla,
+#englishunnakkuthaan,
+#englishennasolla,
+#tamilsiddhivinayak,
+#englishsiddhivinayak{
+    color: #fff;
+    max-width: 10%;
+    font-size: 10px;
+    margin: 30px;
+    position: relative;
+}
+
+#tamilunakkuthaan,
+#tamilennasolla,
+#tamilsiddhivinayak{
+    text-align: right;
+    font-size: 0.7em;
+}
+
+#englishunnakkuthaan,
+#englishennasolla,
+#englishsiddhivinayak{
+    text-align: left;
+    font-size: 0.8em;
+
+}
+
+video {
+    padding: 50px 30px 30px 30px;
+    color: #fff;
+    width: 25%;
+    height: auto;
+    margin: 0 20px;
+}
+
+/*#NAV {*/
+/*    margin-top: 70px;*/
+/*    margin-bottom: 50px;*/
+/*    color: #fff;*/
+/*    position: fixed;*/
+/*    top: 1vh;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    z-index: 2;*/
+/*    cursor: pointer;*/
+/*}*/
+
+#filmHeading {
+    color: white;
+}
+a {
+    text-decoration: none !important;
+}
+/*h2 {*/
+/*    color: white;*/
+/*    position: fixed;*/
+/*    top: 1vh;*/
+/*    width: 55%;*/
+/*    z-index: 2;*/
+/*    font-size: 2em;*/
+/*}*/
+
+h1 {
+    position: fixed;
+    color: white;
+    left: 50%;
+    padding-top: 150px;
+    transform: translate(-50%, -50%);
+    text-align: center;}
+
+
+#tamil {
+    text-align: left;
+    color: white;
+    transition: color 0.1s ease;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#english {
+    text-align: right;
+    color: white;
+    transition: color 0.1s ease;
+    padding-top: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#tamil:hover,
+#english:hover
+h1:hover {
+    color: grey;
+
+}
+
+
+
+#filmHeading{
+    color: white;
+    z-index: 1;
+}
+
+.hover-video {
+    cursor: pointer;
+    outline: none;
+}
+
+.hover-video:hover {
+    filter: brightness(70%);
+}
+
+#musicNavigator,
+#filmNavigator {
+    color: white;
+    transition: color 0.1s ease;
+}
+
+#musicNavigator:hover,
+#filmNavigator:hover {
+    color: grey;
+}
+
+
+
