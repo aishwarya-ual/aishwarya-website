@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="PROJECTS.css" />
+    <title>Projects</title>
+
+    <style>
+        body {
+            background-color: black !important;
+            overflow-y: hidden;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            color: white;
+            position: relative;
+            background: black center;
+            background-size: cover;
+        }
+
+        .container {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: black;
+            border-color: black;
+        }
+
+        .carousel-indicators {
+            bottom: 170px !important;
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 768px) {
+            .container {
+                top: 50%;
+            }
+
+            .carousel-indicators {
+                bottom: 120px !important;
+            }
+            iframe {
+                width: 400px;
+                height: 300px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                top: 60%;
+            }
+
+            .carousel-indicators {
+                bottom: 80px !important;
+            }
+            iframe {
+                width: 80%;
+                height: 90%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+
+<a class="d-flex flex-row justify-content-between text-white p-4" href="http://localhost:3000/">
+    <h2 id="tamil">ஐஸ்வர்யா கௌரி</h2>
+    <h2 id="english">Aishwarya Gowri</h2>
+</a>
+
+<h1 class="text-center text-white"> Projects</h1>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <iframe src="https://editor.p5js.org/arajkumar/full/o39kZePoa" width="1000" height="500"></iframe>
+                <h1>The Solar System</h1>
+                <p>Click to see facts, press keys from 1-8 to see names</p>
+                <a href="https://editor.p5js.org/arajkumar/sketches/o39kZePoa" class="btn btn-lg btn-dark btn-primary">P5.JS</a>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container">
+                <iframe src="https://editor.p5js.org/arajkumar/full/chxn3xicl" height="500" width="800"></iframe>
+                <h1>Oceans</h1>
+                <p>Click on ocean region for facts, press corresponding letter keys for animals</p>
+                <a href="https://editor.p5js.org/arajkumar/sketches/chxn3xicl" class="btn btn-lg btn-dark btn-primary">P5.JS</a>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container">
+                <iframe src="https://editor.p5js.org/arajkumar/full/X-dxDYe4c" height="500" width="800"></iframe>
+                <h1>Mountains in Monsoon</h1>
+                <p>A peaceful game. Use arrow keys to operate</p>
+                <a href="https://editor.p5js.org/arajkumar/sketches/X-dxDYe4c" class="btn btn-lg btn-dark btn-primary">P5.JS</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+        <span class="sr-only"></span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+        <span class="sr-only"></span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

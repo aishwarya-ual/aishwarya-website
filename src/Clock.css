@@ -1,95 +1,130 @@
 .react-clock {
-  display: block;
-  position: center;
+    display: block;
+    position: center;
 }
+
 .react-clock,
 .react-clock *,
 .react-clock *:before,
 .react-clock *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: initial;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: initial;
+    box-sizing: border-box;
 }
+
+
 
 .react-clock {
-speak-time: none;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.react-clock__face {
-  position: static;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-;
-
-  border-radius: 100%;
-}
-.react-clock__hand {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 50%;
-}
-.react-clock__hand__body {
-  position: absolute;
-  background-color: white;
-  transform: translate(-50%);
-}
-.react-clock__mark {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 50%;
-}
-.react-clock__mark__body {
-  position: absolute;
-  background-color: white;
-  transform: translate(-50%);
-
-}
-.react-clock__mark__number {
-  position: absolute;
-  left: 0px;
-  width: 80px;
-  text-align: center;
-}
-.react-clock__second-hand__body {
-  background-color: white;
+    speak-time: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 30px;
 }
 
 
 .clockClass {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 70px;
-  padding-right: 70px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 20px auto 0;
 
-.clock1 {
-  padding-right: 70px;
-  padding-left: 70px;
-}
-
-.clock2 {
-  padding-right: 70px;
-  padding-left: 70px;
 
 }
-.clockLocal {
-  padding-right: 70px;
-  padding-left: 70px;
+/*.dateTime:hover {*/
+
+/*    animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;*/
+/*}*/
+
+/*.country:hover {*/
+/*    animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;*/
+
+/*}*/
+
+.flickering {
+    animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+
 }
-.clock3 {
-  padding-right: 70px;
-  padding-left: 70px;
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
-.clock4 {
-  padding-right: 70px;
-  padding-left: 70px;
+.country {
+    font-size: 14px;
+    color: white
+;
+}
+.glow {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+
+.clocky {
+    padding-right: 70px;
+    display: inline-block;
+    background-color: black;
+    padding-left: 70px;
+    color: white;
+    font-size: 13px;
+    border: black;
+
+}
+.border {
+  border: 2px solid white;
+}
+
+.buttons {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border: none;
+    border-radius: 10%;
+}
+
+.buttons:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+.deleteButton:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+
+.deleteButton {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 10%;
+
 }

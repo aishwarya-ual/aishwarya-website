@@ -1,26 +1,9 @@
 
 
 
-.App-header {
 
-  background-color: black;
-  background-image: url("//unpkg.com/three-globe/example/img/night-sky.png");
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(50px + 2vmin);
-  color: black;
-  margin: 0;
-  z-index: 1;
 
-}
 
-.body {
-  padding-top: 0;
-  margin-top: 0;
-}
 
 
 

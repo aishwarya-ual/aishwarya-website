@@ -1,0 +1,39 @@
+body {
+    font-family: 'Times New Roman', serif !important;
+}
+
+#tamil:hover,
+#english:hover {
+    color: grey;
+
+}
+a {
+    text-decoration: none !important;
+}
+
+#aishu {
+    padding-left: 200px;
+    padding-top: 90px;
+    display: flex;
+}
+
+p {
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+#IG {
+    width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    #aishu {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #aishu {
+        padding-left: 10px;
+    }
+}

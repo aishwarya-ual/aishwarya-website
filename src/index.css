@@ -1,24 +1,109 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
-  text-align: center;
-  object-position: center;
-}
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+    text-align: center;
+    object-position: center;
+
 }
 
-.App-header {
-  text-align: center;
-  object-position: center;
-  background-image: image("//unpkg.com/three-globe/example/img/night-sky.png");
+
+.font-link {
+    font-family: 'Times New Roman', serif;
+}
+
+html, body {
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+    /*overflow-y: hidden;*/
+    z-index: 0;
+    text-align: center;
+    object-position: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    color: black;
+    margin: 0;
+}
+
+code {
+    font-family: 'Times New Roman', serif;
+}
+
+h1 {
+    color: white;
+}
+
+#tamillogo {
+    flex-basis: 30%;
+}
+
+#englishlogo {
+    flex-basis: 30%;
+}
+
+.globeClass {
+    flex-basis: 40%;
+}
+
+h2 {
+    color: white;
+    transition: color 0.3s ease;
+    cursor: pointer;
+
+}
+
+
+h2:hover {
+    color: gray;
+}
+
+.globeName {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .globeName {
+        flex-direction: column;
+    }
+
+    .links {
+        gap: 150px !important;
+    }
+
+    .clocky {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+
+    br {
+        display: none;
+    }
+
+    .clockClass {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .links {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+}
+
+
+.links {
+    display: flex;
+    gap: 300px;
+}
+
+
+a {
+    text-decoration: none;
 }

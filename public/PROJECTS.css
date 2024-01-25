@@ -1,0 +1,16 @@
+body {
+    font-family: 'Times New Roman', serif !important;
+
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+#tamil:hover,
+#english:hover
+h1:hover {
+    color: grey;
+
+}
